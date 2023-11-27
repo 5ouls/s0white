@@ -37,11 +37,11 @@ def get_weather(province, city):
     print(response_json)
     weatherinfo = response_json["weatherinfo"]
     # 天气
-    weather = {"value": weatherinfo["weather"], "color": "#FEAD39"}
+    weather = weatherinfo["weather"]
     # 最高气温
-    temp = {"value": weatherinfo["temp"], "color": "#FEAD39"}
+    temp = weatherinfo["temp"]
     # 最低气温
-    tempn = {"value": weatherinfo["tempn"], "color": "#FEAD39"}
+    tempn = weatherinfo["tempn"]
     return weather, temp, tempn
 
 
